@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import styles from "./componentscss/order.module.css";
 import { Link, useNavigate } from 'react-router-dom';
 import { cancelOrderApi, getOrderlistApi } from '../utils/apiOrder';
-import { userContext } from '../store';
+import { userContext } from '../Store';
 import { toast } from 'react-toastify';
 
 

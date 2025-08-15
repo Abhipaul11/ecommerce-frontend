@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { userContext } from '../store'
+import { userContext } from '../Store'
 import { Navigate, Outlet } from 'react-router-dom'
 import UserLayout from '../layout/UserLayout'
 

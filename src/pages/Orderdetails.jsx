@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import styles from './pagecss/orderdetails.module.css';
-import { userContext } from '../store';
+import { userContext } from '../Store';
 import { useLocation } from 'react-router-dom'; // Import useLocation
 import { getOrderlistApi } from '../utils/apiOrder';
 import Tracker from '../components/Tracker';

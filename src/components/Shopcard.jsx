@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import styles from "./componentscss/shopcard.module.css"
 import { FaHeart } from "react-icons/fa";
-import { userContext } from '../store';
+import { userContext } from '../Store';
 import { addToWishlistApi } from '../utils/apiWishList';
 import { toast } from 'react-toastify';
 import { addToCartApi } from '../utils/apiCart';

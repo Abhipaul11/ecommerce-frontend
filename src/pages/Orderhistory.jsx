@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import styles from "./pagecss/orderhistory.module.css"
 import Order from '../components/Order'
 import { getOrderlistApi } from '../utils/apiOrder';
-import { userContext } from '../store';
+import { userContext } from '../Store';
 
 function Orderhistory() {
     const { data, dispatch } = useContext(userContext);

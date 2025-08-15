@@ -5,7 +5,7 @@ import { BiCategoryAlt } from "react-icons/bi";
 import { IoPerson } from "react-icons/io5";
 import { CiMoneyBill } from "react-icons/ci";
 import { IoMdHeartEmpty } from "react-icons/io";
-import { userContext } from '../store';
+import { userContext } from '../Store';
 import { deletelocalStorage, getlocalStorage, setlocalStorage } from '../utils/localStorage.util';
 
 function Header() {

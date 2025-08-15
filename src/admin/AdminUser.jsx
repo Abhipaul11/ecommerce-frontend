@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import styles from './admincss/admindashboard.module.css'
 import Admindashboard from './Admindashboard'
 import { getUserStatus } from '../utils/apiUser';
-import { userContext } from '../store';
+import { userContext } from '../Store';
 
 function AdminUser() {
     const { data, dispatch } = useContext(userContext)

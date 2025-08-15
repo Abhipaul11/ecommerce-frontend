@@ -1,7 +1,7 @@
 import React, { useCallback, useContext, useEffect, useState } from 'react'
 import styles from "./pagecss/cart.module.css";
 import { FaRegTrashAlt } from "react-icons/fa";
-import { userContext } from '../store'
+import { userContext } from '../Store'
 import { addOrderApi, deleteCartApi, getCartlistApi, quantityDecreaseApi, quantityIncreaseApi } from '../utils/apiCart'
 import { toast } from 'react-toastify'
 import { Link } from 'react-router-dom'

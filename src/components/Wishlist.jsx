@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import styles from "./componentscss/wishlist.module.css";
 import { FaRegTrashAlt } from "react-icons/fa";
-import { userContext } from "../store";
+import { userContext } from "../Store";
 import { deleteWishListApi } from "../utils/apiWishList";
 import { addToCartApi } from "../utils/apiCart";
 import { toast } from "react-toastify";

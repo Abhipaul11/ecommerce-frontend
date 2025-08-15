@@ -7,7 +7,7 @@ import Signup from './components/Signup'
 
 
 import Form from './Form'
-import Store from './store'
+import Store from './Store'
 import Cart from './pages/Cart'
 import Favorite from './pages/Favorite'
 import UserLayout from './layout/UserLayout'

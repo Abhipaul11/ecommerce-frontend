@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import Wishlist from '../components/Wishlist'
 import styles from "./pagecss/cart.module.css";
-import { userContext } from '../store';
+import { userContext } from '../Store';
 import { getWishListApi } from '../utils/apiWishList';
 
 function Favorite() {

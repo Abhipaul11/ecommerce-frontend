@@ -5,7 +5,7 @@ import Header from "./Header"
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { toast } from 'react-toastify'
-import { userContext } from '../store';
+import { userContext } from '../Store';
 import { setlocalStorage } from '../utils/localStorage.util'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
