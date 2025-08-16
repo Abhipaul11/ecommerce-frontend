@@ -20,8 +20,8 @@ function Home() {
                 const response = await axios.get(`${import.meta.env.VITE_BASE_URL}getallproduct`)
                 const lastresponse = await axios.get(`${import.meta.env.VITE_BASE_URL}getallproduct?size=3`)
                 console.log("this is products", response)
-                setShopCard(response.data.allProducts)
-                setCard(lastresponse.data.allProducts)
+                setShopCard(response.data.products)
+                setCard(lastresponse.data.products)
             } catch (error) {
                 console.log(error)
             }
