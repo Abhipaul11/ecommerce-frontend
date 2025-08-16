@@ -17,8 +17,8 @@ function Home() {
         const getAllProducts = async () => {
             try {
                 console.log('all products')
-                const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/getallproduct`)
-                const lastresponse = await axios.get(`${import.meta.env.VITE_BASE_URL}/getallproduct?size=3`)
+                const response = await axios.get(`${import.meta.env.VITE_BASE_URL}getallproduct`)
+                const lastresponse = await axios.get(`${import.meta.env.VITE_BASE_URL}getallproduct?size=3`)
                 console.log("this is products", response)
                 setShopCard(response.data.allProducts)
                 setCard(lastresponse.data.allProducts)

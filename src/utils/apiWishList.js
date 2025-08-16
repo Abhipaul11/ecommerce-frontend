@@ -6,7 +6,7 @@ export const addToWishlistApi = async (data, token) => {
     console.log("addto wishlist api fubnction called", data)
     console.log(token)
     try {
-        const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/addwishlist/${data.id}`, data, {
+        const response = await axios.post(`${import.meta.env.VITE_BASE_URL}addwishlist/${data.id}`, data, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -24,7 +24,7 @@ export const addToWishlistApi = async (data, token) => {
 
 export const getWishListApi = async (token) => {
     try {
-        const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/getwishlist`, {
+        const response = await axios.get(`${import.meta.env.VITE_BASE_URL}getwishlist`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -40,7 +40,7 @@ export const getWishListApi = async (token) => {
 export const deleteWishListApi = async (productId, token) => {
     console.log(productId)
     try {
-        const response = await axios.delete(`${import.meta.env.VITE_BASE_URL}/deletewishlist/${productId}`, {
+        const response = await axios.delete(`${import.meta.env.VITE_BASE_URL}deletewishlist/${productId}`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },

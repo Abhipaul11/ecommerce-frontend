@@ -3,7 +3,7 @@ import { data } from "react-router-dom";
 
 export const getOrderlistApi = async (token) => {
     try {
-        const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/orderhistory`, {
+        const response = await axios.get(`${import.meta.env.VITE_BASE_URL}orderhistory`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -17,7 +17,7 @@ export const getOrderlistApi = async (token) => {
 export const cancelOrderApi = async (orderno, token) => {
     // console.log("incoming orderNO", orderno)
     try {
-        const response = await fetch(`${import.meta.env.VITE_BASE_URL}/cancelorder/${orderno}`, {
+        const response = await fetch(`${import.meta.env.VITE_BASE_URL}cancelorder/${orderno}`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -30,7 +30,7 @@ export const cancelOrderApi = async (orderno, token) => {
 }
 export const getTotalOrderApi = async (token) => {
     try {
-        const response = await fetch(`${import.meta.env.VITE_BASE_URL}/getallorders`, {
+        const response = await fetch(`${import.meta.env.VITE_BASE_URL}getallorders`, {
             headers: {
                 Authorization: `Bearer ${token}`,
                 "Content-Type": "application/json",

@@ -3,7 +3,7 @@ import { data } from "react-router-dom";
 
 export const getUserStatus = async (token) => {
     try {
-        const response = await fetch(`${import.meta.env.VITE_BASE_URL}/getUserStatus`, {
+        const response = await fetch(`${import.meta.env.VITE_BASE_URL}getUserStatus`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },

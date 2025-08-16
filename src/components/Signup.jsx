@@ -14,7 +14,7 @@ function Signup() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/signup`, formdata);
+            const response = await axios.post(`${import.meta.env.VITE_BASE_URL}signup`, formdata);
             console.log(response)
             alert("resgistration successfully")
             setFormData({ name: "", email: "", password: "" });
