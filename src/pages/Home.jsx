@@ -20,8 +20,8 @@ function Home() {
                 const response = await axios.get(`${import.meta.env.VITE_BASE_URL}getallproduct`)
                 const lastresponse = await axios.get(`${import.meta.env.VITE_BASE_URL}getallproduct?size=3`)
                 console.log("this is products", response)
-                setShopCard(response.data.products)
-                setCard(lastresponse.data.products)
+                setShopCard(response.data.allProducts)
+                setCard(lastresponse.data.allProducts)
             } catch (error) {
                 console.log(error)
             }
@@ -65,11 +65,9 @@ function Home() {
                     {card?.map((allProducts, index) => {
                         const { image, category, name, price } = allProducts;
                         return (
-                            // <Card key={index} image={image} category="" name={name} price={price} />
                             <Card key={index} image={image} category={category?.categoryname} name={name} price={price} />
                         )
                     })}
-                    {/* <Card />  */}
 
 
                 </div>

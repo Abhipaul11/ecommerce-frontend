@@ -17,7 +17,7 @@ function Header() {
         setIsLogin(false)
     }
 
-    console.log("show data", data)
+    // console.log("show data", data)
     return (
         <>
             <header>

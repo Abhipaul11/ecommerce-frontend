@@ -33,11 +33,21 @@ function Cart({ image, price, id }) {
                 <div className={styles.container}>
                     {cart?.length > 0 ? (
                         cart.map((item, index) => (
-                            <Cartdetails key={index} id={item.productId._id} itemname={item.productId.name} image={`${imagelink}/${item.productId.image}`} price={item.productId.price} quantity={item.quantity} />
+                            item?.productId ? (
+                                <Cartdetails
+                                    key={index}
+                                    id={item.productId._id}
+                                    itemname={item.productId.name}
+                                    image={`${imagelink}/${item.productId.image}`}
+                                    price={item.productId.price}
+                                    quantity={item.quantity}
+                                />
+                            ) : null
                         ))
                     ) : (
                         <h2>Cart is empty</h2>
                     )}
+
                 </div>
 
                 <Checkout />

@@ -27,7 +27,7 @@ function Orderdetails() {
                         console.log("single item inside map", item)
                         return (
                             <div key={index} className={styles.insidecontainer}>
-                                <img src={`http://localhost:3000/uploads/${item.product.image}`} alt={item.product.name} />
+                                <img src={item.product.image} alt={item.product.name} />
                                 <p>Name: {item.product.name}</p>
                                 <p>Price: ₹{item.product.price}</p>
                             </div>

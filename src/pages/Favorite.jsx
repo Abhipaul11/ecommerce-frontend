@@ -31,12 +31,22 @@ function Favorite() {
                 <div className={styles.container}>
 
                     {favoriteProducts?.length > 0 ? (
-                        favoriteProducts?.map((item, index) => (
-                            <Wishlist key={index} id={item.productId._id} itemname={item.productId.name} image={`${imagelink}/${item.productId.image}`} price={item.productId.price} category={item.productId.category.categoryname} />
+                        favoriteProducts.map((item, index) => (
+                            item?.productId ? (
+                                <Wishlist
+                                    key={item.productId._id || index}
+                                    id={item.productId._id}
+                                    itemname={item.productId.name}
+                                    image={item.productId.image}
+                                    price={item.productId.price}
+                                    category={item.productId.category?.categoryname || "N/A"}
+                                />
+                            ) : null
                         ))
                     ) : (
                         <h2>Wishlist is empty</h2>
                     )}
+
                 </div>
 
 
